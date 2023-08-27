@@ -8,7 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 # models.Base.metadata.create_all(bind=engine)
 #get_db = d.get_db
 app = FastAPI()
-origins = ["https://www.google.com"]
+origins = ["*"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
